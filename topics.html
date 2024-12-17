@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css" class="css" />
     <link rel="stylesheet" href="style2.css" class="css" />
     <link rel="stylesheet" href="style4.css" class="css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -46,7 +48,7 @@
   </head>
   <body>
     <div class="background-container">
-      <header>
+      <header data-aos="fade-down" data-aos-duration="800">
         <i class="fi fi-rr-menu-burger"></i>
         <a href="index.html">
           <img
@@ -63,8 +65,22 @@
               <a href="#">Tendances</a>
             </div>
           </div>
-          <a href="#">Parcourir</a>
-          <a href="#">Pages</a>
+          <div class="explorer-container">
+            <a href="#" id="browse-link">Parcourir</a>
+            <div class="explorer-menu" id="browse-menu">
+              <a href="#">Animes</a>
+              <a href="#">Mangas</a>
+              <a href="#">Discussions</a>
+            </div>
+          </div>
+          <div class="explorer-container">
+            <a href="#" id="pages-link">Pages</a>
+            <div class="explorer-menu" id="pages-menu">
+              <a href="#">A propos</a>
+              <a href="#">Contact</a>
+              <a href="#">FAQ</a>
+            </div>
+          </div>
         </nav>
         <div class="search"><h3>Recherche...</h3></div>
         <div class="icon_content">
@@ -332,5 +348,8 @@
         </div>
       </div>
     </footer>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

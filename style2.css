@@ -1,5 +1,3 @@
-
-
 .banner-container {
   width: 100%; /* S'assure que le conteneur prend toute la largeur */
   position: relative;
@@ -7,7 +5,7 @@
 
 .banner {
   width: 100%; /* S'assure que la bannière prend toute la largeur du conteneur */
-  height: 612px;
+  height: 523px;
   background-color: bisque;
   background-image: url(images/background/Banner.png);
   background-size: cover;
@@ -15,13 +13,13 @@
   background-repeat: no-repeat;
 
   width: calc(100% + 14rem);
-    margin-left: -7rem;
+  margin-left: -7rem;
+  margin-top: 3rem;
 }
 
 .first_block {
-  background: 
-    linear-gradient(90deg, #E181E700 0%, #51085533 100%), 
-    linear-gradient(45deg, #1E1F25 0%, #6F758B 100%);
+  background: linear-gradient(90deg, #e181e700 0%, #51085533 100%),
+    linear-gradient(45deg, #1e1f25 0%, #6f758b 100%);
   width: 100%;
   height: 70px;
   border-top-right-radius: 1rem;
@@ -40,12 +38,15 @@
   line-height: 3;
 }
 
-
 .mini_block {
   width: 100px;
   height: 101px;
   /* background-color: #A1A1A1; */
-  background: linear-gradient(90deg, #FFFFFF 45%, rgba(161, 161, 161, 0.2) 100%);
+  background: linear-gradient(
+    90deg,
+    #ffffff 45%,
+    rgba(161, 161, 161, 0.2) 100%
+  );
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 
   display: flex;
@@ -53,10 +54,8 @@
   justify-content: center;
 }
 
-
 .mini_block .fi {
   font-size: 1.8rem;
-  
 }
 
 .large_block {
@@ -67,14 +66,13 @@
   justify-content: space-between;
 
   padding: 0 1rem;
-  border-bottom: 1px solid #AEAEAE;
+  border-bottom: 1px solid #aeaeae;
 }
-
 
 .mini_round {
   width: 40px;
   height: 40px;
-  background-color: #6F758B;
+  background-color: #6f758b;
   border-radius: 50%;
 }
 
@@ -87,21 +85,18 @@
 
 .round_content {
   display: flex;
-  
 }
-
 
 .stats_info {
   display: flex;
-    align-items: center;
-    gap: 1.5rem;
-} 
-
+  align-items: center;
+  gap: 1.5rem;
+}
 
 .stats_info h5 {
   color: black;
   font-size: 1rem;
-  color: #ACA6A6;
+  color: #aca6a6;
 }
 
 .icon_text {
@@ -116,13 +111,12 @@
 }
 
 .fi-rr-users {
-  color: #ACA6A6;
+  color: #aca6a6;
 }
 
 .fi-rs-beacon {
-  color: #ACA6A6;
+  color: #aca6a6;
 }
-
 
 .forum_block {
   margin-bottom: 7rem;
@@ -133,4 +127,3 @@
   color: black;
   padding: 0;
 }
-
